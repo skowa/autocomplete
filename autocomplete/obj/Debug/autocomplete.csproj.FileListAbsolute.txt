@@ -1,0 +1,7 @@
+C:\Users\skowa\Source\Repos\autocomplete\autocomplete\bin\Debug\autocomplete.exe.config
+C:\Users\skowa\Source\Repos\autocomplete\autocomplete\bin\Debug\autocomplete.exe
+C:\Users\skowa\Source\Repos\autocomplete\autocomplete\bin\Debug\autocomplete.pdb
+C:\Users\skowa\Source\Repos\autocomplete\autocomplete\obj\Debug\autocomplete.csprojResolveAssemblyReference.cache
+C:\Users\skowa\Source\Repos\autocomplete\autocomplete\obj\Debug\autocomplete.csproj.CoreCompileInputs.cache
+C:\Users\skowa\Source\Repos\autocomplete\autocomplete\obj\Debug\autocomplete.exe
+C:\Users\skowa\Source\Repos\autocomplete\autocomplete\obj\Debug\autocomplete.pdb
