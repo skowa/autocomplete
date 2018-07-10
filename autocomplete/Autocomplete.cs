@@ -5,15 +5,6 @@ namespace autocomplete
 {
 	public class Autocomplete
 	{
-		public List<string> AutocompleteString(string givenString, string pathToHints)
-		{
-			AutocompleteHelper helper = new AutocompleteHelper(pathToHints);
-			List<string> hints = helper.LoadHints();
-
-			List<string> foundElements = new List<string>();
-			foundElements = hints.Where(s => s.StartsWith(givenString)).ToList();
-
-			return foundElements;
-		}
+		public List<string> AutocompleteString(string givenString, List<string> hints) => hints.Where(s => s.StartsWith(givenString)).ToList();
 	}
 }

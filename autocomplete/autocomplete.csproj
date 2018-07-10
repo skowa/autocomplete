@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="Autocomplete.cs" />
     <Compile Include="AutocompleteHelper.cs" />
-    <Compile Include="ConsoleHelper.cs" />
+    <Compile Include="IAutocompleteHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

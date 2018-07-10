@@ -6,16 +6,16 @@ using System.Text.RegularExpressions;
 
 namespace autocomplete
 {
-	public class AutocompleteHelper
+	public class AutocompleteFromFileHelper : IAutocompleteHelper
 	{
-		public AutocompleteHelper(string path)
+		public AutocompleteFromFileHelper(string path)
 		{
 			FilePath = path;
 		}
 
-		public string FilePath { get; set; }
+		public string FilePath { get; }
 
-		public List<string> LoadHints()
+		public List<string> GetHints()
 		{
 			List<string> hints = new List<string>();
 			string buff;
@@ -27,7 +27,6 @@ namespace autocomplete
 
 			buff = Regex.Replace(buff, "[^A-Za-z ]", String.Empty);
 			hints = buff.Split(' ', '\n').Distinct().ToList();
-			hints.Sort();
 
 			return hints;
 		}
