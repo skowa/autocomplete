@@ -2,7 +2,7 @@
 
 namespace autocomplete
 {
-	interface IAutocompleteHelper
+	public interface IAutocompleteHelper
 	{
 		List<string> GetHints();
 	}

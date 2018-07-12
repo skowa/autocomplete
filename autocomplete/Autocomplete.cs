@@ -5,6 +5,11 @@ namespace autocomplete
 {
 	public class Autocomplete
 	{
-		public List<string> AutocompleteString(string givenString, List<string> hints) => hints.Where(s => s.StartsWith(givenString)).ToList();
+		public List<string> AutocompleteString(string givenString, IAutocompleteHelper helper)
+		{
+			List<string> hints = helper.GetHints();
+
+			return hints.Where(s => s.StartsWith(givenString)).ToList();
+		}
 	}
 }

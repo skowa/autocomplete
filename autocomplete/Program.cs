@@ -10,8 +10,6 @@ namespace autocomplete
 
 		static void Main(string[] args)
 		{
-			List<string> hints = helper.GetHints();
-
 			string input = string.Empty;
 			ConsoleKeyInfo keyInfo;
 
@@ -22,7 +20,7 @@ namespace autocomplete
 
 				if (input.Length != 0)
 				{
-					List<string> foundElements = autocomplete.AutocompleteString(input, hints);
+					List<string> foundElements = autocomplete.AutocompleteString(input, helper);
 
 					Console.Clear();
 					Console.WriteLine(input);
